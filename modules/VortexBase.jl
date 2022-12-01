@@ -108,11 +108,11 @@ function induced_velocity_ring(x, points; K=K_Vatistas, r_c)
 end
 
 """
-    compute_lift(N, L, control_points, X, X̃, Γ, Γ̃)
+    compute_lift(N, L, control_points, X, X̃, Γ, Γ̃, V∞)
 
  Computes the lift distribution given the blade and wake geometry and circulation
 """
-function compute_lift(N, L, control_points, X, X̃, Γ, Γ̃)
+function compute_lift(N, L, control_points, X, X̃, Γ, Γ̃, V∞)
     lift = zeros(N, 3)
     V_span = zeros(N, 3)
     for i∈1:N

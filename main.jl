@@ -158,7 +158,7 @@ end
 
 #####################################################
 
-lift = compute_lift(N, L, control_points, X, X̃, Γ, Γ̃)
+lift = compute_lift(N, L, control_points, X, X̃, Γ, Γ̃, V∞)
 
 # compute the velocity at the control points
 v = zeros(N, 3)
