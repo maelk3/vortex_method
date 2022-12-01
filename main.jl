@@ -27,7 +27,7 @@ R = r_15MW(1)              # blade length
 
 N = 30             # spanwise discretization
 L = 50             # wake size
-nb_iter = 120      # number of iterations
+nb_iter = 12     # number of iterations
 Δt = (10π/180)*1/Ω # time step
 r_c = 0.05         # vortex core radius
 
@@ -158,7 +158,7 @@ end
 
 #####################################################
 
-lift = compute_lift(N, L, control_points, X, X̃, Γ, Γ̃, V∞)
+lift = compute_lift(N, L, control_points, X, X̃, Γ, Γ̃, V∞, Ω, r_c, ρ)
 
 # compute the velocity at the control points
 v = zeros(N, 3)
